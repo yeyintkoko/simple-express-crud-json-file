@@ -1,0 +1,49 @@
+<% var title = 'Users' %> <% include partials/_header.html %>
+
+<div class="container mt-5">
+  <table id="usersTable" class="table table-striped" style="width: 100%">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">City</th>
+        <th scope="col">Bank</th>
+        <th scope="col">Postcode</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Passport</th>
+        <th scope="col" class="action-col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% if (data) { %> <% for(var i = 0; i < data.length; i++) { %>
+      <tr>
+        <td scope="row"><%= (i + 1) %></td>
+        <td><%= data[i].name %></td>
+        <td><%= data[i].address %></td>
+        <td><%= data[i].city %></td>
+        <td><%= data[i].bank_name %></td>
+        <td><%= data[i].postcode %></td>
+        <td><%= data[i].tel %></td>
+        <td><%= data[i].passport %></td>
+        <td class="action-col">
+          <a
+            href="/users/update/<%= data[i].id %>"
+            class="btn btn-sm btn-outline-secondary"
+            role="button"
+            >Edit</a
+          >
+          <a
+            href="/users/delete/<%= data[i].id %>"
+            class="btn btn-sm btn-outline-danger"
+            role="button"
+            >Delete</a
+          >
+        </td>
+      </tr>
+      <% } %> <% } %>
+    </tbody>
+  </table>
+</div>
+
+<% include partials/_footer.html %>
