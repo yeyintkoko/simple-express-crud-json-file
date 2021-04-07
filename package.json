@@ -1,0 +1,30 @@
+{
+  "name": "adminapp",
+  "version": "1.0.0",
+  "description": "Simple CRUD to db.json file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeyintkoko/simple-express-crud-json-file.git"
+  },
+  "keywords": [
+    "simple",
+    "CRUD",
+    "express",
+    "node.js",
+    "file",
+    "simple",
+    "CRUD",
+    "json",
+    "file"
+  ],
+  "author": "Ye Yint Ko Ko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeyintkoko/simple-express-crud-json-file/issues"
+  },
+  "homepage": "https://github.com/yeyintkoko/simple-express-crud-json-file#readme"
+}
