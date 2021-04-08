@@ -1,19 +1,15 @@
 <% var title = 'Error' %> <% include partials/_header.html %>
 <div class="container mt-5">
-  <h3 style="color: red; font-family: Helvetica, Arial, sans-serif;">
-    Something went wrong
-  </h3>
-  Status: <%- status %>
-  <br />
-  Message: <%- message %>
-  <br />
-  Url: <%= url %>
-  <br />
-  <br />
-  <p>
-    <code>
-      <%= error %>
-    </code>
-  </p>
-  <% include partials/_footer.html %>
+    <h3 style="color: red; font-family: Helvetica, Arial, sans-serif">Something went wrong</h3>
+    Status: <%- status %>
+    <br />
+    Message: <%- message %>
+    <br />
+    Url: <%= url %>
+    <br />
+    <br />
+    <p>
+        <code> <%= error %> </code>
+    </p>
+    <% include partials/_footer.html %>
 </div>

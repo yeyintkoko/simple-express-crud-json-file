@@ -1,197 +1,190 @@
 <% var title = 'Edit user' %> <% include partials/_header.html %>
 
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-md-12 card">
-      <div class="card-body">
-        <form action="/users/update/<%= data.id %>" method="POST">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="mb-3">
-                <label for="name" class="form-label">Fullname</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  value="<%= data.name %>"
-                  autofocus
-                />
-              </div>
-              <div class="mb-3">
-                <label for="tel" class="form-label">Phone number</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="tel"
-                  name="tel"
-                  placeholder="Tel"
-                  value="<%= data.tel %>"
-                />
-              </div>
+    <div class="row">
+        <div class="col-md-12 card">
+            <div class="card-body">
+                <form action="/users/update/<%= data.id %>" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Fullname</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Name"
+                                    value="<%= data.name %>"
+                                    autofocus
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">Phone number</label>
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="tel"
+                                    name="tel"
+                                    placeholder="Tel"
+                                    value="<%= data.tel %>"
+                                />
+                            </div>
 
-              <div class="mb-3">
-                <label for="passport" class="form-label">Passport</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="passport"
-                  name="passport"
-                  placeholder="Passport"
-                  value="<%= data.passport %>"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="bank_name" class="form-label">Bank</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="bank_name"
-                  name="bank_name"
-                  placeholder="Bank"
-                  value="<%= data.bank_name %>"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="bank_no" class="form-label">Bank Account No.</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="bank_no"
-                  name="bank_no"
-                  placeholder="Account number"
-                  value="<%= data.bank_no %>"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="city" class="form-label">City</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="city"
-                  name="city"
-                  placeholder="City"
-                  value="<%= data.city %>"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
-                <textarea
-                  class="form-control"
-                  id="address"
-                  name="address"
-                  rows="3"
-                >
+                            <div class="mb-3">
+                                <label for="passport" class="form-label">Passport</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="passport"
+                                    name="passport"
+                                    placeholder="Passport"
+                                    value="<%= data.passport %>"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="bank_name" class="form-label">Bank</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="bank_name"
+                                    name="bank_name"
+                                    placeholder="Bank"
+                                    value="<%= data.bank_name %>"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="bank_no" class="form-label">Bank Account No.</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="bank_no"
+                                    name="bank_no"
+                                    placeholder="Account number"
+                                    value="<%= data.bank_no %>"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="city" class="form-label">City</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="city"
+                                    name="city"
+                                    placeholder="City"
+                                    value="<%= data.city %>"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <textarea class="form-control" id="address" name="address" rows="3">
           <%= data.address %></textarea
-                >
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="mb-3">
-                <label for="state" class="form-label">State</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="state"
-                  name="state"
-                  placeholder="State"
-                  value="<%= data.state %>"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="country" class="form-label">Country</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="country"
-                  name="country"
-                  placeholder="Country"
-                  value="<%= data.country %>"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="postcode" class="form-label">Postcode</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="postcode"
-                  name="postcode"
-                  placeholder="Postcode"
-                  value="<%= data.postcode %>"
-                />
-              </div>
+                                >
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="state" class="form-label">State</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="state"
+                                    name="state"
+                                    placeholder="State"
+                                    value="<%= data.state %>"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="country" class="form-label">Country</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="country"
+                                    name="country"
+                                    placeholder="Country"
+                                    value="<%= data.country %>"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="postcode" class="form-label">Postcode</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="postcode"
+                                    name="postcode"
+                                    placeholder="Postcode"
+                                    value="<%= data.postcode %>"
+                                />
+                            </div>
 
-              <div class="mb-3">
-                <label for="chat_id" class="form-label">Chat Id</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="chat_id"
-                  name="chat_id"
-                  placeholder="Chat id"
-                  value="<%= data.chat_id %>"
-                  readonly
-                />
-              </div>
-              <div class="mb-3">
-                <label for="lang" class="form-label">Language</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lang"
-                  name="lang"
-                  placeholder="Language"
-                  value="<%= data.lang %>"
-                  readonly
-                />
-              </div>
-              <div class="mb-3">
-                <label for="level" class="form-label">Level</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="level"
-                  name="level"
-                  placeholder="Level"
-                  value="<%= data.level %>"
-                  readonly
-                />
-              </div>
-              <div class="mb-3">
-                <label for="sponsor" class="form-label">Sponsor</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="sponsor"
-                  name="sponsor"
-                  placeholder="Sponsor"
-                  value="<%= data.sponsor %>"
-                  readonly
-                />
-              </div>
-              <div class="mb-3">
-                <label for="status" class="form-label">Status</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="status"
-                  name="status"
-                  placeholder="Status"
-                  value="<%= data.status %>"
-                  readonly
-                />
-              </div>
-            </div>
-          </div>
+                            <div class="mb-3">
+                                <label for="chat_id" class="form-label">Chat Id</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="chat_id"
+                                    name="chat_id"
+                                    placeholder="Chat id"
+                                    value="<%= data.chat_id %>"
+                                    readonly
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="lang" class="form-label">Language</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="lang"
+                                    name="lang"
+                                    placeholder="Language"
+                                    value="<%= data.lang %>"
+                                    readonly
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="level" class="form-label">Level</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="level"
+                                    name="level"
+                                    placeholder="Level"
+                                    value="<%= data.level %>"
+                                    readonly
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="sponsor" class="form-label">Sponsor</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="sponsor"
+                                    name="sponsor"
+                                    placeholder="Sponsor"
+                                    value="<%= data.sponsor %>"
+                                    readonly
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="status" class="form-label">Status</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="status"
+                                    name="status"
+                                    placeholder="Status"
+                                    value="<%= data.status %>"
+                                    readonly
+                                />
+                            </div>
+                        </div>
+                    </div>
 
-          <button type="submit" class="btn btn-primary">
-            save customer
-          </button>
-        </form>
-      </div>
+                    <button type="submit" class="btn btn-primary">save customer</button>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
 <% include partials/_footer.html %>

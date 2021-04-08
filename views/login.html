@@ -1,47 +1,36 @@
 <% var title = 'Login' %> <% include partials/_header.html %>
 
 <div class="container mt-5">
-  <div class="row">
-    <div class="col-md-6">
-      <h3>Login</h3>
-      <%- message %> Try accessing <a href="/restricted">/restricted</a>, then
-      authenticate with "tj" and "foobar".
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Login</h3>
+            <span class="text-danger"><%- errMsg %></span>
+            <span class="text-success"><%- message %></span>
+            <form method="post" action="/auth/login">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        name="username"
+                        aria-describedby="usernameHelp"
+                    />
 
-      <form method="post" action="/auth/login">
-        <div class="mb-3">
-          <label for="username" class="form-label">Username</label>
-          <input
-            type="email"
-            class="form-control"
-            id="username"
-            name="username"
-            aria-describedby="usernameHelp"
-          />
-          <div id="usernameHelp" class="form-text">
-            Enter the username you received from us.
-          </div>
+                    <div id="usernameHelp" class="form-text">Enter the username you received from us.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" />
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="create" name="create" />
+                    <label class="form-check-label" for="create">Create new account</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="password"
-            name="password"
-          />
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Check me out</label
-          >
-        </div>
-        <button type="submit" class="btn btn-primary">
-          Submit
-        </button>
-      </form>
     </div>
-  </div>
 </div>
 
 <% include partials/_footer.html %>

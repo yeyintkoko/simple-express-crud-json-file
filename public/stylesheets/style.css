@@ -1,11 +1,22 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00b7ff;
+    color: #00b7ff;
+}
+
+.logout-btn {
+    position: absolute;
+    right: 40px;
+    color: yellow;
+    text-decoration: none;
+}
+
+.username {
+    color: #ccc;
 }
 
 .action-col {
-  width: 122px;
+    width: 122px;
 }
