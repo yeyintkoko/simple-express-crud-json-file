@@ -143,15 +143,11 @@
                             </div>
                             <div class="mb-3">
                                 <label for="level" class="form-label">Level</label>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="level"
-                                    name="level"
-                                    placeholder="Level"
-                                    value="<%= data.level %>"
-                                    readonly
-                                />
+                                <select class="form-select" aria-label="Select level" name="level" id="level">
+                                    <option <% if (data.level != 0 || data.level != 1) { %> <%="selected" %> <% } %>>Select level</option>
+                                    <option value="0" <% if (data.level == 0) { %> <%="selected" %> <% } %>>0</option>
+                                    <option value="1" <% if (data.level == 1) { %> <%="selected" %> <% } %>>1</option>
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <label for="sponsor" class="form-label">Sponsor</label>
@@ -162,7 +158,6 @@
                                     name="sponsor"
                                     placeholder="Sponsor"
                                     value="<%= data.sponsor %>"
-                                    readonly
                                 />
                             </div>
                             <div class="mb-3">
@@ -180,7 +175,9 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">save customer</button>
+                    <button type="submit" class="btn btn-primary">Save User</button>
+                    &nbsp; &nbsp;
+                    <a href="/users" class="btn btn-secondary">Cancel</a>
                 </form>
             </div>
         </div>

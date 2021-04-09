@@ -3,5 +3,10 @@
         "name": "admin",
         "salt": "puZhNXWzENJyx4tfdnZbvB7wqZtXmDd+S7XYVhp6ldmUpdSoJGUhsdL52bvDWCMLo21emLvBLzJ5ZHI8YuG+Uw==",
         "hash": "Kij3g2xZxXid/KmYbU0f6nhCzHsM4yC4+ykIO8jqUwzHVRnDEHpw4R3hlrelEIJDkbUHbQHXNSCOUXuZvvokmH/GiAFgjca4o/pQi4LOvgrrwa8c29aVB4OBIZtXgw2xwsVU1zfP1QTdDjpKDc2hdLPlfB4u8jEaMJM+cmGOJtc="
+    },
+    "james": {
+        "name": "james",
+        "salt": "hM/JvcVVVSAsNHF6mtxdqPV/UcrNaGNJFMk5bGEM0oZFJpqUX5XqVgvTNeK+XFUNZMf1Sgp690i0TJnf1ai3NQ==",
+        "hash": "pSw1kmFy3m+3I9l0SjlzsgELc+E5H108dN0t7hX1X0m7nU5iSXaRHvH/XRppCSFXx86tgf9mEdKEY9IL8JO/WhjInCVEchP6bsCxcjZ90x/DfzPbfCrY65R/QF3PZI+olS9O2BtU/DxqMQaY5sIOnTbgrpqnZ+B9OZCKs4QblQk="
     }
 }
