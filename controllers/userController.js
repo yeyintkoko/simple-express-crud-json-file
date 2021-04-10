@@ -4,7 +4,7 @@ var { getDb } = require('../utils');
 const saveDb = (data, callback) => {
     var fs = require('fs');
     const config = require('../config.json');
-    fs.writeFile(config.db, JSON.stringify(data, null, 4), 'utf8', callback);
+    fs.writeFile(process.env.DB_URL || config.db, JSON.stringify(data, null, 4), 'utf8', callback);
 };
 
 const getAllUsers = () => {

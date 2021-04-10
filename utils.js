@@ -9,7 +9,7 @@ const restrict = (req, res, next) => {
 
 const getDb = () => {
     const config = require('./config.json');
-    const db = require(config.db);
+    const db = require(process.env.DB_URL || config.db);
     return db;
 };
 

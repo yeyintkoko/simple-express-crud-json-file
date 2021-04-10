@@ -30,9 +30,12 @@
                     <a href="/users/update/<%= data[i].id %>" class="btn btn-sm btn-outline-secondary" role="button"
                         >Edit</a
                     >
-                    <a href="/users/delete/<%= data[i].id %>" class="btn btn-sm btn-outline-danger" role="button"
-                        >Delete</a
+                    <button
+                        class="btn btn-sm btn-outline-danger"
+                        onclick="confirmDelete('/users/delete/<%= data[i].id %>');"
                     >
+                        Delete
+                    </button>
                 </td>
             </tr>
             <% } %> <% } %>

@@ -18,24 +18,6 @@
             "sponsor": "46546545",
             "status": "1"
         },
-        "2": {
-            "chat_id": 359083354,
-            "lang": "en",
-            "level": 0,
-            "sponsor": "",
-            "status": 1,
-            "name": "Name",
-            "passport": "Passport",
-            "passport_img": 0,
-            "address": "My address",
-            "tel": "1234567",
-            "bank_name": "My bank name",
-            "city": "My city",
-            "state": "My state",
-            "postcode": "My postcode",
-            "bank_no": "My account",
-            "country": "MALAYSIA"
-        },
         "3": {
             "chat_id": 1419611063,
             "lang": "ch",
@@ -124,24 +106,6 @@
             "state": "Kuala Lumpur",
             "postcode": "56100",
             "bank_no": "3065452433",
-            "country": "MALAYSIA"
-        },
-        "8": {
-            "chat_id": 354647518,
-            "lang": "en",
-            "level": 0,
-            "sponsor": "",
-            "status": 1,
-            "name": "tan soo eng",
-            "passport": "771025145050",
-            "passport_img": 0,
-            "address": "6 JALAN INANG 21/9，BANDAR MAHKOTA CHERAS\n43200 SELANGOR",
-            "tel": "0122888792",
-            "bank_name": "PUBLIC BANK",
-            "city": "KAJANG",
-            "state": "SELANGOR",
-            "postcode": "43200",
-            "bank_no": "6371359914",
             "country": "MALAYSIA"
         },
         "10": {
