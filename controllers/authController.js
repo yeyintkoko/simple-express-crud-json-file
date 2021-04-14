@@ -29,7 +29,16 @@ controller.middleware = function (req, res, next) {
 const saveDb = (data, callback) => {
     var fs = require('fs');
     const config = require('../config.json');
-    fs.writeFile(config.admins, JSON.stringify(data, null, 4), 'utf8', callback);
+    const writeStream = fs.createWriteStream(config.admins, { flags: 'w', encoding: 'utf8' });
+    writeStream.write(JSON.stringify(data, null, 4));
+    writeStream.end();
+
+    writeStream.on('error', function (err) {
+        callback(err);
+    });
+    writeStream.on('finish', function () {
+        callback();
+    });
 };
 
 // Authenticate using our plain-object database of doom!

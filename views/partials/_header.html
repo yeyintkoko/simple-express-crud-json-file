@@ -36,7 +36,7 @@
         <!-- navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="/">&nbsp; &nbsp; Users Management</a>
-            &nbsp; &nbsp; <% if(user) { %>
+            &nbsp; &nbsp; <% if(user && user.name) { %>
             <span class="username"><%- user.name %></span>
             <a class="logout-btn" href="/auth/logout">Logout</a>
             <% } %>

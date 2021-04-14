@@ -4,7 +4,16 @@ var { getDb } = require('../utils');
 const saveDb = (data, callback) => {
     var fs = require('fs');
     const config = require('../config.json');
-    fs.writeFile(process.env.DB_URL || config.db, JSON.stringify(data, null, 4), 'utf8', callback);
+    const writeStream = fs.createWriteStream(process.env.DB_URL || config.db, { flags: 'w', encoding: 'utf8' });
+    writeStream.write(JSON.stringify(data, null, 4));
+    writeStream.end();
+
+    writeStream.on('error', function (err) {
+        callback(err);
+    });
+    writeStream.on('finish', function () {
+        callback();
+    });
 };
 
 const getAllUsers = () => {
